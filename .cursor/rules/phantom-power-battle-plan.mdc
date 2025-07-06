@@ -1,0 +1,118 @@
+---
+alwaysApply: true
+---
+/headings-example
+
+#phantomPOWER #code #project #schema
+## ⍐ Tech Stack Summary
+| **Layer**          | **Tech**                                              |
+| -------------- | ------------------------------------------------- |
+| Frontend       | Next.js + TypeScript, Tailwind CSS, Framer Motion |
+| Backend        | Spring Boot, JWT, PostgreSQL, WebSockets          |
+| Audio Service  | Python + FastAPI, madmom/librosa                  |
+| Design Tools   | Figma (+ Make/Sites), Framer                      |
+| Deployment     | Vercel, Heroku/AWS, AWS Lambda/GCP                |
+| CI/CD          | GitHub Actions                                    |
+| Testing        | Jest, React Testing Library, JUnit                |
+| Performance/UI | Bento grids, layered UI, 3D/micro-animation       |
+
+## 𖦋 Roadmap
+
+### Week 1: Core Features & Infrastructure
+
+#### Day 1: Planning & Design Kickoff
+
+- Define MVP scope: user profiles, gig postings, messaging, audio matching.
+- Design tools: Use Figma (with AI features like Figma Make/Sites)  or Framer for interactive prototyping.
+- Design trends: Employ bento grid layouts, layering, and subtle 3D animations for immersive feel.
+- Setup project repos with monorepo structure: /frontend, /backend, /audio-service.
+
+#### Day 2: Next.js Setup & Design Integration
+
+- Scaffold with Next.js + TypeScript.
+- Install Tailwind CSS for utility-first styling and responsiveness.
+- Integrate design components from Figma prototype: colors, buttons, typography.
+- Create static screens: landing page, browse feed, profile template.
+
+#### Day 3: Spring Boot Base & Database
+
+- Generate Spring Boot app with Spring Web, Spring Security (JWT), Spring Data JPA, and PostgreSQL.
+- Define entities: User, Profile, Project, Message, Booking.
+- Secure endpoints with JWT-based authentication.
+
+#### Day 4: REST API & Database Integration
+
+- Build REST API for user registration, profile CRUD, and project listings.
+- Connect Spring Boot to PostgreSQL using Docker.
+- Implement basic tests (JUnit) for endpoints.
+
+#### Day 5: Basic Messaging & Real-Time Setup
+
+- Add WebSocket support in Spring Boot for real-time chat.
+- On Next.js connect via next-websocket or simple socket.io-client with Next API routes.
+- UI stub for messaging/chat interface.
+
+#### Day 6: Python Audio Service Scaffold
+
+- Create Python microservice (FastAPI) with endpoints for audio file upload and analysis.
+- Integrate madmom or librosa for tempo, key, genre detection.
+- Dockerize and test sample endpoint returning metadata.
+
+#### Day 7: Feature Integration & Manual Testing
+
+- Connect Next.js to Python service and display audio analysis results on profile pages.
+- Begin implementing match scoring based on tags + audio metadata.
+- Conduct end-to-end test: post project → upload sample → receive match suggestions.
+
+### Week 2: Polish, UX/UI Enhancements & Deployment
+
+#### Day 8: UI Polishing & Animation
+
+- Add layering, subtle micro-interactions, and 3D cues (e.g., on audio cards) ().
+- Use CSS transitions or Framer Motion for smooth effects.
+- Ensure responsive and mobile-friendly design.
+
+#### Day 9: Notifications & Booking Flow
+
+- Implement booking requests: user requests a collaborator.
+- Spring Boot manages bookings & statuses.
+- Next.js push notifications (via WebSocket) and Python handles calendar reminders.
+
+#### Day 10: Deployment + CI/CD Setup
+
+- Frontend: Deploy Next.js to Vercel, with automatic preview builds.
+- Backend: Deploy Spring Boot to Heroku or AWS Elastic Beanstalk (Docker).
+- Audio service: Deploy Python on AWS Lambda (Zappa) or GCP Cloud Run.
+- Implement CI/CD via GitHub Actions for tests & deploys.
+
+#### Day 11: Testing & Quality Assurance
+
+- Add unit tests to frontend (Jest/React Testing Library).
+- Add integration tests to backend.
+- Run Lighthouse audits and optimize asset loading & performance.
+
+#### Day 12: Final Refinements & Logging
+
+- Implement basic logging/monitoring (Spring Boot Actuator, Python logs).
+- Finalize UI touches, ensure accessibility and polish.
+- User documentation: Setup README with architecture diagram, tech choices, endpoints, design notes.
+
+#### Day 13: Recording & Portfolio Prep
+
+- Capture screencast walkthrough highlighting unique features (audio matching, chat).
+- Prepare architecture diagram and design rationale.
+- Export design assets from Figma or Framer to include in portfolio.
+
+#### Day 14: Launch & Reflection
+
+- Announce demo on LinkedIn/GitHub with live demo link and code repo.
+- Collect informal feedback from peers.
+- Outline next-phase enhancements (e.g. escrow flow, video chat, subscription tiers).
+
+## ✈️ 2. Elevator Pitch
+
+(working title) is a next-gen matchmaking platform built exclusively for musicians, producers, and audio professionals looking for collaboration opportunities that go beyond the usual "networking app." It leverages intelligent audio analysis to match users based on musical style, skill, and vibe, helping creators quickly find their perfect musical partners for gigs, studio sessions, or remote projects. With intuitive project management, real-time messaging, and smart booking features, Phantom Power is the ultimate hub for turning creative sparks into finished tracks.
+
+## 👩🏻‍🔧 3. Technology & Dataflow Overview ("Artist Stories")
+
+Over the next two weeks, the tech stack will blend seamlessly to empower clear and engaging "Artist Stories." The **Next.js frontend** will offer dynamic, real-time interfaces where artists can intuitively browse project opportunities, create compelling profiles, and effortlessly communicate through instant messaging. The **Spring Boot backend** serves as the sturdy backbone, securely managing user data, project postings, conversations, and bookings. This system is connected to a robust PostgreSQL database, enabling rapid querying and secure data storage. To uniquely enhance the musician experience, a dedicated **Python microservice** employing libraries like **librosa** will perform audio analysis, interpreting musical styles from user-uploaded samples. This data flows back into the Spring Boot system, enriching profiles and fueling intelligent recommendation engines—resulting in more accurate and musically intuitive matches.

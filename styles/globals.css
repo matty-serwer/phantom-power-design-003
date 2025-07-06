@@ -50,6 +50,15 @@
   --shadow-2xl: 0px 2px 5px -0.5px hsl(0 0% 10.1961% / 1.15);
   --tracking-normal: -0.025em;
   --spacing: 0.25rem;
+  --h1-size: 4.90em;
+  --h1-weight: 300;
+  --h2-size: 7.80em;
+  --h2-weight: 600;
+  --h3-size: 2.60em;
+  --h4-size: 1.40em;
+  --h4-weight: 800;
+  --h5-size: 1.20em;
+  --h6-size: 1.10em;
 }
 
 .dark {
@@ -161,6 +170,40 @@
 
 body {
   letter-spacing: var(--tracking-normal);
+}
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  color: var(--color-chart-1);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  color: var(--color-chart-2);
+  line-height: 0.9;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  color: var(--color-chart-3);
+}
+
+h4 {
+  font-size: var(--h4-size);
+  font-weight: var(--h4-weight);
+  color: var(--color-chart-4);
+}
+
+h5 {
+  font-size: var(--h5-size);
+  color: var(--color-chart-5);
+}
+
+h6 {
+  font-size: var(--h6-size);
+  color: var(--color-chart-1);
 }
 
 @layer base {

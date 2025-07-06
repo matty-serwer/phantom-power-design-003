@@ -1,9 +1,15 @@
-import Image from "next/image";
+import React from 'react';
+import Header from '../components/layout/Header'
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Header />
+      <main>
+        {/* Other content of the home page */}
+      </main>
+    </>
   );
-}
+};
+
+export default HomePage;
