@@ -206,6 +206,10 @@ h6 {
   color: var(--color-chart-1);
 }
 
+.nav-link {
+  font-size: 1.1em;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

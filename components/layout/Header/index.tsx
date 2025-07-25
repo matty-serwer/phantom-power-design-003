@@ -2,9 +2,9 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center p-4 bg-background text-foreground shadow-md">
+    <header className="flex justify-between items-center p-4 bg-background text-foreground shadow-sm">
       <div className="text-4xl font-extralight text-chart-1">Phantom Power</div>
-      <nav className="flex space-x-4">
+      <nav className="flex space-x-4 nav-link">
         <a href="/dashboard" className="hover:text-chart-2">Dashboard</a>
         <a href="/blog" className="hover:text-chart-3">Blog</a>
         <a href="/features" className="hover:text-chart-4">Features</a>
